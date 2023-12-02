@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}        <!--Load static -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
+
+    <!-- carousel css -->
+    <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}">
+
+    <!-- fontawesom css -->
+    <link rel="stylesheet" href="{% static 'app/css/fontawesome.css' %}">
+
+
+    <!-- dynamic title -->
+    <title>Throwing | {% block title %} {% endblock title %} </title>
+</head>
+<body>
+    <!-- navbar(include) -->
+
+    <!-- Inherite -->
+    {% block banner_slider %} {% endblock banner_slider %}
+    {% block livesale %} {% endblock livesale %}
+    {% block main-content %} {% endblock main-content %}
+
+    <!-- footer -->
+
+    <!-- jquery, popper, bootstrap, carousel, fontawesome -->
+    <link rel="stylesheet" href="{% static 'app/js/jquery.js' %}">
+    <link rel="stylesheet" href="{% static 'app/js/popper.js' %}">
+    <link rel="stylesheet" href="{% static 'app/js/bootstrap.min.js' %}">
+
+    <link rel="stylesheet" href="{% static 'app/js/owl.carousel.min.js' %}">
+    <link rel="stylesheet" href="{% static 'app/js/all.min.js' %}">              <!--fontawesom-->
+
+    
+</body>
+</html>
